@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>756,2297</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,2257</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CoffeeMugAutoUpload_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -119,19 +119,19 @@
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Auto Upload Process" sap:VirtualizedContainerService.HintSize="766,2232" sap2010:WorkflowViewState.IdRef="Sequence_22">
+  <Sequence DisplayName="Auto Upload Process" sap:VirtualizedContainerService.HintSize="766,2192" sap2010:WorkflowViewState.IdRef="Sequence_22">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard sap2010:Annotation.AnnotationText="- Go to new campaign page&#xA;- Confirm website loaded&#xA;- Run the product upload sequence&#xA;&#xA;" AttachMode="ByInstance" CloseMode="Never" DisplayName="Open Gearbubble Website - Use Browser Activity" sap:VirtualizedContainerService.HintSize="704,2121" sap2010:WorkflowViewState.IdRef="NApplicationCard_14" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="8a991587-1a7e-4a76-88e5-dbbbb6d542f5" Version="V1">
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="- Go to new campaign page&#xA;- Confirm website loaded&#xA;- Run the product upload sequence&#xA;&#xA;" AttachMode="ByInstance" CloseMode="Never" DisplayName="Open Gearbubble Website - Use Browser Activity" sap:VirtualizedContainerService.HintSize="704,2081" sap2010:WorkflowViewState.IdRef="NApplicationCard_14" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="8a991587-1a7e-4a76-88e5-dbbbb6d542f5" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Product Launch Sequence" sap:VirtualizedContainerService.HintSize="670,1817" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <Sequence DisplayName="Product Launch Sequence" sap:VirtualizedContainerService.HintSize="670,1777" sap2010:WorkflowViewState.IdRef="Sequence_16">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="SelectYourProductImageExists" />
             </Sequence.Variables>
@@ -173,14 +173,14 @@
                 </ui:RetryScope.Condition>
               </ui:RetryScope>
             </Sequence>
-            <Sequence sap2010:Annotation.AnnotationText="This sequence consists of two parts.&#xA;&#xA;2. Create your design &#xA;&#xA;3. Add a description&#xA;&#xA;More specific explanation of the activitys can be found inside the sequences." DisplayName="Set Product Data According To Excel File - Coffee Mug" sap:VirtualizedContainerService.HintSize="608,1550" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <Sequence sap2010:Annotation.AnnotationText="This sequence consists of two parts.&#xA;&#xA;2. Create your design &#xA;&#xA;3. Add a description&#xA;&#xA;More specific explanation of the activitys can be found inside the sequences." DisplayName="Set Product Data According To Excel File - Coffee Mug" sap:VirtualizedContainerService.HintSize="608,1510" sap2010:WorkflowViewState.IdRef="Sequence_15">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Activity" sap:VirtualizedContainerService.HintSize="546,1318" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="bc86487a-5979-4839-baf9-68b01920ca7c" Version="V1">
+              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Activity" sap:VirtualizedContainerService.HintSize="546,1278" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="bc86487a-5979-4839-baf9-68b01920ca7c" Version="V1">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
@@ -192,7 +192,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence sap2010:Annotation.AnnotationText="This sequence fills in all the required info in the &quot;Create your design&quot; phase of Gearbubble campaign creation process. &#xA;&#xA;Steps in sequence:&#xA;&#xA;Part 1:&#xA;&#xA;- Select product (Coffee Mug)&#xA;- Click Next Step&#xA;- Select product type&#xA;- Set product color &#xA;- Type into price field&#xA;&#xA;Part 2:&#xA;&#xA;- Deselect &quot;Snap to center&quot;&#xA;- Click Upload&#xA;- Click Upload Graphic Window&#xA;- Open File Explorer &#xA;- Type design file path into edit field.&#xA;- Press &quot;Enter&quot; to upload.&#xA;- Clicks Next Step &#xA;- Check Check for next page to load.&#xA;- If No - then log message and inform user&#xA;- If Yes - Process continues&#xA;" DisplayName="2. Create your design" sap:VirtualizedContainerService.HintSize="766,4842" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <Sequence sap2010:Annotation.AnnotationText="This sequence fills in all the required info in the &quot;Create your design&quot; phase of Gearbubble campaign creation process. &#xA;&#xA;Steps in sequence:&#xA;&#xA;Part 1:&#xA;&#xA;- Select product (Coffee Mug)&#xA;- Click Next Step&#xA;- Select product type&#xA;- Set product color &#xA;- Type into price field&#xA;&#xA;Part 2:&#xA;&#xA;- Deselect &quot;Snap to center&quot;&#xA;- Click Upload&#xA;- Click Upload Graphic Window&#xA;- Open File Explorer &#xA;- Type design file path into edit field.&#xA;- Press &quot;Enter&quot; to upload.&#xA;- Clicks Next Step &#xA;- Check Check for next page to load.&#xA;- If No - then log message and inform user&#xA;- If Yes - Process continues&#xA;" DisplayName="2. Create your design" sap:VirtualizedContainerService.HintSize="766,4946" sap2010:WorkflowViewState.IdRef="Sequence_10">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -200,7 +200,7 @@
                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence sap2010:Annotation.AnnotationText="This sequence uploads the rest of the data.&#xA;&#xA;- Item type (11oz / 15oz etc..&#xA;- Product color&#xA;- Price&#xA;" DisplayName="Upload Part 1" sap:VirtualizedContainerService.HintSize="704,4344" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <Sequence sap2010:Annotation.AnnotationText="This sequence uploads the rest of the data.&#xA;&#xA;- Item type (11oz / 15oz etc..&#xA;- Product color&#xA;- Price&#xA;" DisplayName="Upload Part 1" sap:VirtualizedContainerService.HintSize="704,4448" sap2010:WorkflowViewState.IdRef="Sequence_9">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="Color" />
                           </Sequence.Variables>
@@ -260,8 +260,8 @@
                               <InArgument x:TypeArguments="x:String">[in_TransactionItem("Color").ToString]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <Switch x:TypeArguments="x:String" DisplayName="Select Color" Expression="[Color]" sap:VirtualizedContainerService.HintSize="642,316" sap2010:WorkflowViewState.IdRef="Switch`1_2">
-                            <uix:NApplicationCard x:Key="White" AttachMode="ByInstance" CloseMode="Never" DisplayName="White - 11 / 15 Oz Mugs" sap:VirtualizedContainerService.HintSize="434,375" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="90e5850d-39cf-4d75-84ff-44e2a3297dc7" Version="V1">
+                          <Switch x:TypeArguments="x:String" DisplayName="Select Color" Expression="[Color]" sap:VirtualizedContainerService.HintSize="642,420" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+                            <uix:NApplicationCard x:Key="White" AttachMode="ByInstance" CloseMode="Never" DisplayName="White - 11 / 15 Oz Mugs" sap:VirtualizedContainerService.HintSize="434,374" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="90e5850d-39cf-4d75-84ff-44e2a3297dc7" Version="V1">
                               <uix:NApplicationCard.Body>
                                 <ActivityAction x:TypeArguments="x:Object">
                                   <ActivityAction.Argument>
@@ -331,7 +331,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NApplicationCard>
-                            <uix:NApplicationCard x:Key="Purple" AttachMode="ByInstance" CloseMode="Never" DisplayName="Purple - 11 Oz Metallic Mug" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="90e5850d-39cf-4d75-84ff-44e2a3297dc7" Version="V1">
+                            <uix:NApplicationCard x:Key="Purple" AttachMode="ByInstance" CloseMode="Never" DisplayName="Purple - 11 Oz Metallic Mug" sap:VirtualizedContainerService.HintSize="232,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="90e5850d-39cf-4d75-84ff-44e2a3297dc7" Version="V1">
                               <uix:NApplicationCard.Body>
                                 <ActivityAction x:TypeArguments="x:Object">
                                   <ActivityAction.Argument>
@@ -366,7 +366,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NApplicationCard>
-                            <uix:NApplicationCard x:Key="Gold" AttachMode="ByInstance" CloseMode="Never" DisplayName="Gold - 11 Oz Metallic Mug" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="90e5850d-39cf-4d75-84ff-44e2a3297dc7" Version="V1">
+                            <uix:NApplicationCard x:Key="Gold" AttachMode="ByInstance" CloseMode="Never" DisplayName="Gold - 11 Oz Metallic Mug" sap:VirtualizedContainerService.HintSize="223,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="90e5850d-39cf-4d75-84ff-44e2a3297dc7" Version="V1">
                               <uix:NApplicationCard.Body>
                                 <ActivityAction x:TypeArguments="x:Object">
                                   <ActivityAction.Argument>

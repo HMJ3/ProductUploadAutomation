@@ -1,12 +1,13 @@
 {
   "name": "ProductUploadAutomation",
+  "projectId": "c508de3f-ff75-4ab4-bf23-54368120dd78",
   "description": "E-Commerce product upload process.",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.20.2]",
-    "UiPath.System.Activities": "[23.5.0-preview]",
-    "UiPath.Testing.Activities": "[23.5.0-preview]",
-    "UiPath.UIAutomation.Activities": "[23.5.0-preview]"
+    "UiPath.Excel.Activities": "[2.21.0-preview]",
+    "UiPath.System.Activities": "[23.6.0-preview]",
+    "UiPath.Testing.Activities": "[23.6.0-preview]",
+    "UiPath.UIAutomation.Activities": "[23.6.2-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
