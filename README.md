@@ -1,10 +1,3 @@
-### Video Demo ###
-
-https://youtu.be/VAj6RVH819g
-
-### Documentation is included in the Documentation folder ###
-
-
 ### REFrameWork Template ###
 **Robotic Enterprise Framework**
 
