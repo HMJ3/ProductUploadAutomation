@@ -1,6 +1,6 @@
 # Product Upload Automation using UiPath Studio
 
-This project automates the process of uploading products to an online store using **UiPath Studio**, built on top of the **Robotic Enterprise Framework (REFramework)**.
+This project automates the process of uploading products to an online store using UiPath Studio, built on top of the Robotic Enterprise Framework (REFramework).
 
 It is designed for reliability, scalability, and ease of maintenance, featuring modular workflows, high-level logging, and robust exception handling.
 
@@ -10,13 +10,13 @@ It is designed for reliability, scalability, and ease of maintenance, featuring 
 
 ## Features
 
-- Built on **Transactional Business Process** architecture (REFramework)
-- **State Machine** layout for automation phases
-- High-level **logging**, **exception handling**, and **auto-recovery**
-- Reads **product data** from Excel (`ProductData.xlsx`)
-- Pulls **credentials** from Orchestrator Assets or Windows Credential Manager
-- Fetches and updates **transaction status** via Orchestrator Queues
-- Captures **screenshots** on exceptions for easy debugging
+- Built on transactional business process architecture (REFramework)
+- State machine layout for automation phases
+- High-level logging, exception handling, and auto-recovery
+- Reads product data from Excel (`ProductData.xlsx`)
+- Pulls credentials from Orchestrator Assets or Windows Credential Manager
+- Fetches and updates transaction status via Orchestrator Queues
+- Captures screenshots on exceptions for easy debugging
 
 ## Process Flow Overview
 
