@@ -1,36 +1,52 @@
-### REFrameWork Template ###
-**Robotic Enterprise Framework**
+# Product Upload Automation using UiPath Studio
 
-* Built on top of *Transactional Business Process* template
-* Uses *State Machine* layout for the phases of automation project
-* Offers high level logging, exception handling and recovery
-* Keeps external settings in *Config.xlsx* file and Orchestrator assets
-* Pulls credentials from Orchestrator assets and *Windows Credential Manager*
-* Gets transaction data from Orchestrator queue and updates back status
-* Takes screenshots in case of system exceptions
+This project automates the process of uploading products to an online store using **UiPath Studio**, built on top of the **Robotic Enterprise Framework (REFramework)**.
 
+It is designed for reliability, scalability, and ease of maintenance, featuring modular workflows, high-level logging, and robust exception handling.
 
-### How It Works ###
+## Demo
 
-1. **INITIALIZE PROCESS**
- + ./Framework/*InitiAllSettings* - Load configuration data from Config.xlsx file and from assets
- + ./Framework/*GetAppCredential* - Retrieve credentials from Orchestrator assets or local Windows Credential Manager
- + ./Framework/*InitiAllApplications* - Open and login to applications used throughout the process
+[Watch the Demo on YouTube](https://www.youtube.com/watch?v=VAj6RVH819g)
 
-2. **GET TRANSACTION DATA**
- + ./Framework/*GetTransactionData* - Fetches transactions from an Orchestrator queue defined by Config("OrchestratorQueueName") or any other configured data source
+## Features
 
-3. **PROCESS TRANSACTION**
- + *Process* - Process trasaction and invoke other workflows related to the process being automated 
- + ./Framework/*SetTransactionStatus* - Updates the status of the processed transaction (Orchestrator transactions by default): Success, Business Rule Exception or System Exception
+- Built on **Transactional Business Process** architecture (REFramework)
+- **State Machine** layout for automation phases
+- High-level **logging**, **exception handling**, and **auto-recovery**
+- Reads **product data** from Excel (`ProductData.xlsx`)
+- Pulls **credentials** from Orchestrator Assets or Windows Credential Manager
+- Fetches and updates **transaction status** via Orchestrator Queues
+- Captures **screenshots** on exceptions for easy debugging
 
-4. **END PROCESS**
- + ./Framework/*CloseAllApplications* - Logs out and closes applications used throughout the process
+## Process Flow Overview
 
+### 1. Initialize
+- `InitAllSettings.xaml`: Loads configuration from `Config.xlsx` and Orchestrator assets.
+- `GetAppCredential.xaml`: Retrieves app credentials.
+- `InitAllApplications.xaml`: Launches and logs into necessary applications.
 
-### For New Project ###
+### 2. Get Transaction Data
+- `GetTransactionData.xaml`: Reads transaction items from an Orchestrator queue or Excel.
 
-1. Check the Config.xlsx file and add/customize any required fields and values
-2. Implement InitiAllApplications.xaml and CloseAllApplicatoins.xaml workflows, linking them in the Config.xlsx fields
-3. Implement GetTransactionData.xaml and SetTransactionStatus.xaml according to the transaction type being used (Orchestrator queues by default)
-4. Implement Process.xaml workflow and invoke other workflows related to the process being automated
+### 3. Process Transaction
+- `Process.xaml`: Automates the product upload logic.
+- Invokes helper workflows for interacting with the UI and handling business rules.
+
+### 4. End Process
+- `CloseAllApplications.xaml`: Logs out and closes all apps.
+- `SetTransactionStatus.xaml`: Updates transaction status (Success, Business Exception, or System Exception).
+
+## Project Structure
+
+```bash
+ProductUploadAutomation/
+│
+├── Data/                       # Input data (ProductData.xlsx) & Config.xlsx
+├── Documentation/              # Any documentation, if applicable
+├── Exceptions_Screenshots/     # Stores screenshots for exceptions
+├── Framework/                  # Core REFramework components
+├── Tests/                      # Test cases or sample invocations
+├── AutoResizeSequence.xaml     # Custom logic component (e.g., resizing UI)
+├── Main.xaml                   # Entry point of the automation
+├── project.json                # Project metadata and dependencies
+└── README.md                   # You're reading it!
